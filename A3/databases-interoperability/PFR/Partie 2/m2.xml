@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE reservation SYSTEM "m1.dtd">
+
+<reservation>
+	<noSejour>L001</noSejour>
+	<client>
+		<nom>Picard</nom>
+		<codeC>C8</codeC>
+	</client>
+	<sejour statut="confirmé">
+		<theme>16</theme>
+		<date>14</date>
+	</sejour>
+	<parking>
+		<nom>Laube</nom>
+		<place>A0</place>
+		<immatriculation>474SRC75</immatriculation>
+	</parking>
+	<liste_appartements>
+		<appartement>
+			<room_type></room_type>
+			<arrondissement></arrondissement>
+			<bedrooms></bedrooms>
+			<price></price>
+			<accomodates></accomodates>
+			<overall_satisfaction></overall_satisfaction>
+		</appartement>
+	</liste_appartements>
+</reservation>

@@ -1,0 +1,78 @@
+=============== Q1 ===============
+
+$.chiens
+$..*
+
+=============== Q2 ===============
+
+$.chiens.* 
+
+=============== Q3 ===============
+
+$.chiens[1].nom
+
+=============== Q4 ===============
+
+$.chiens[(@.length-1)].nom
+
+=============== Q5 ===============
+
+$.chiens[*].nom
+$.chiens.nom  => false 
+$.chiens[nom] => false 
+$.chiens..nom ou $.chiens.[nom] 
+
+=============== Q6 ===============
+
+$.chiens[?(@.nom == "Taiga")] 
+$.chiens[?(@.nom == "Taiga")].* 
+
+=============== Q7 ===============
+
+$.chiens[?(@.nom == "Figaro")] 
+$.chiens[?(@.nom == "Figaro")].*
+
+=============== Q8 ===============
+
+$.chiens[?(@.nom == "Taiga")].proprietaire
+
+=============== Q9 ===============
+
+$.chiens[?(@.sexe == "femelle")].nom
+
+=============== Q10 ===============
+
+$.chiens[?(@.nom == "Loukhoum")].chiots 
+
+=============== Q11 ===============
+
+$.chiens[?(@.nom == "Loukhoum")].chiots.nom => false 
+$.chiens[?(@.nom == "Loukhoum")].chiots..nom
+
+=============== Q12 ===============
+
+$.chiens[?(@.chiots)].nom
+
+=============== Q13 ===============
+
+$.chiens[?(!@.chiots)].nom 
+
+=============== Q14 ===============
+
+$.chiens[?(@.chiots)].chiots.nom => false 
+$.chiens[?(@.chiots)].chiots..nom 
+
+=============== Q15 ===============
+
+$.chiens[0:].nom  
+$.chiens[*].nom 
+$.chiens[?(@.nom)].nom 
+
+=============== Q16 ===============
+
+$.chiens[?(@.annee < 2000)].nom 
+
+=============== Q17 ===============
+
+$.chiens[?(@.sexe == "femelle" && @.annee< 2000)].n
+om 

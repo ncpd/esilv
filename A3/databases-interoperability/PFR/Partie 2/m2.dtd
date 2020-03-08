@@ -1,0 +1,6 @@
+<!ELEMENT reservation (client, adresse, date, sejour)>
+<!ELEMENT client (#PCDATA)>
+<!ELEMENT adresse (ville)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT sejour (#PCDATA)>

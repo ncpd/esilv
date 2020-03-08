@@ -1,0 +1,1 @@
+db.employees.find({ "current_dept.dept_no": "d004" }, { "emp_no": 1, "first_name": 1, "last_name": 1 })

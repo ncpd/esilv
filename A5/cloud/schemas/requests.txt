@@ -1,0 +1,17 @@
+################## REQUETES SIMPLES (USER) ################## 
+
+1) Obtenir sa fiche de paie de l'année actuelle
+2) Obtenir les employés travaillant dans son département
+3) Obtenir le ou les managers d'un département
+4) Obtenir le nom et le titre des derniers employés arrivés dans son département (par volume, par date)
+ 
+################## REQUETES COMPLEXES (ANALYST) ################## 
+
+1) Obtenir la paie moyenne( ou genre la plus petite et la plus grande) par departement si c'est un homme/femme/tranche d'âge (REDUCE)
+2) Obtenir tous les numéros d'employés qui ont le même titre (MAP) 
+
+################## REQUETES STATS (ADMIN) ################## 
+
+1) Obtenir la collection la plus lourde
+2) Obtenir le nb de documents dans la collection employee (classés par dpt)
+3) Obtenir la performance des requêtes et en tirer qqch

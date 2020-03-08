@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="CodeLite" Database="" Version="10.0.0">
+  <Project Name="TD1" Path="td1-c/TD1.project" Active="No"/>
+  <Project Name="TD2" Path="td2-c/TD2.project" Active="No"/>
+  <Project Name="TD3" Path="td3-c/TD3.project" Active="No"/>
+  <Project Name="TD4" Path="td4-c/TD4.project" Active="No"/>
+  <Project Name="TD5" Path="td5-c/TD5.project" Active="No"/>
+  <Project Name="TD6_7" Path="td6-7-c/TD6_7.project" Active="No"/>
+  <Project Name="TD8_9" Path="td8-9-c/TD8_9.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="TD1" ConfigName="Debug"/>
+      <Project Name="TD1" ConfigName="Debug"/>
+      <Project Name="TD2" ConfigName="Debug"/>
+      <Project Name="TD3" ConfigName="Debug"/>
+      <Project Name="TD4" ConfigName="Debug"/>
+      <Project Name="TD5" ConfigName="Debug"/>
+      <Project Name="TD6_7" ConfigName="Debug"/>
+      <Project Name="TD6_7" ConfigName="Debug"/>
+      <Project Name="TD8_9" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="TD1" ConfigName="Release"/>
+      <Project Name="TD1" ConfigName="Release"/>
+      <Project Name="TD2" ConfigName="Release"/>
+      <Project Name="TD3" ConfigName="Release"/>
+      <Project Name="TD4" ConfigName="Release"/>
+      <Project Name="TD5" ConfigName="Release"/>
+      <Project Name="TD6_7" ConfigName="Release"/>
+      <Project Name="TD6_7" ConfigName="Release"/>
+      <Project Name="TD8_9" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

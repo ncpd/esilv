@@ -1,0 +1,28 @@
+<?xml version ="1.0" encoding ="UTF-8" standalone="no"?>
+
+<!-- DTD interne à definir -->
+<!DOCTYPE QCMRU SYSTEM "exo2.dtd">
+
+<QCMRU >
+	<question >
+		<enonce >Quelle opération donne pour résultat 6 ? </enonce >
+		<choix >2 + 3 </choix >
+		<choix >2 - 3 </choix >
+		<choix >2 * 3 </choix >
+		<choix >2 / 3 </choix >
+		<reponse solution ="3" />
+	</question >
+	<question >
+			<enonce >Quelle est la couleur du cheval blanc d'Henri IV ? </enonce >
+			<choix >rouge </choix >
+			<choix >noir </choix >
+			<choix >blanc </choix >
+	</question >
+	<question >
+			<enonce >Combien de faces a un cube ? </enonce >
+			<choix >quatre </choix >
+			<choix >six </choix >
+			<choix >sept </choix >
+			<reponse solution ="2"> parce que c'est comme ca ! </reponse >
+	</question >
+</QCMRU >

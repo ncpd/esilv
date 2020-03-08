@@ -1,0 +1,17 @@
+Fixe,Siemens,0641710069,A123
+Fixe,Siemens,0296223958,A124
+Fixe,Siemens,0502278646,A125
+Fixe,Siemens,0472330729,A126
+Fixe,Siemens,0677300347,A127
+Fixe,Siemens,0744384766,A128
+Fixe,Siemens,0304144965,A129
+Fixe,Siemens,0921196832,A130
+Portable,Sony,0553738064,Thomas
+Portable,Sony,0419867621Ghunter
+Portable,Sony,0663519965,Sigmund
+Portable,Sony,0895724827,Alfred
+Portable,Sony,0730929905,Raymond
+Portable,Sony,0476616753,Emmanuelle
+Portable,Sony,0500976562,Gertrude
+Portable,Sony,0487033420,Raphaelle
+Portable,Sony,0154703775,Ingrid

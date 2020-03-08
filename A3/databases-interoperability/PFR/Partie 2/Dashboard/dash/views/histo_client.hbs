@@ -1,0 +1,227 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>{{title}}</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+    <!-- bootstrap -->
+    <link href="../../../stylesheets/bootstrap.css" rel="stylesheet">
+
+    <!-- materialize -->
+    <link href="../../stylesheets/materialize.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../stylesheets/waves.css" rel="stylesheet" />
+
+    <!-- all-themes -->
+    <link href="../../stylesheets/themes/all-themes.css" rel="stylesheet">
+    <link href="../../stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="overlay"></div>
+<!-- Top Bar -->
+<nav class="navbar-fixed-top bg-deep-orange">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="index.html">{{title}}</a>
+        </div>
+    </div>
+</nav>
+<!-- #Top Bar -->
+
+<!-- LEFT SIDEBAR -->
+<section>
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="image">
+                <img src="../../images/user.png" width="48" height="48" alt="User" />
+            </div>
+            <div class="info-container">
+                <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nicolas PICARD</div>
+                <div class="email">nicolas.picard@devinci.fr</div>
+            </div>
+        </div>
+        <!-- #User Info -->
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">NAVIGATION</li>
+                <li class="active">
+                    <a href="/">
+                        <i class="material-icons">dashboard</i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">folder</i>
+                        <span>Tableaux</span>
+                    </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a href="/historique">
+                                <span>Général</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/historique/client">
+                                <span>Historique Client</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/historique/vehicule">
+                                <span>Historique Interventions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/rentabilite">
+                        <i class="material-icons">euro_symbol</i>
+                        <span>Rentabilité</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- #Menu -->
+        <!-- Footer -->
+        <div class="legal">
+            <div class="copyright">
+                &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+            </div>
+            <div class="version">
+                <b>Version: </b> 1.0.5
+            </div>
+        </div>
+        <!-- #Footer -->
+    </aside>
+    <!-- #END# Left Sidebar -->
+</section>
+<!-- END LEFT SIDEBAR -->
+
+<!-- DONNEES MILIEU -->
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            RECHERCHE DE CLIENT
+                        </h2>
+                    </div>
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" placeholder="Code Client ('C3' par exemple)" id="input_client">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn bg-deep-orange waves-effect" id="search_button" onclick="searchLocations()">
+                                    <i class="material-icons">search</i>
+                                    <span>CHERCHER</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            HISTORIQUE DES LOCATIONS
+                        </h2>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="matable">
+                                <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Séjour</th>
+                                    <th>Immatriculation</th>
+                                    <th>Appréciation</th>
+                                    <th>Note</th>
+                                </tr>
+                                </thead>
+                                <tfoot>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Séjour</th>
+                                    <th>Immatriculation</th>
+                                    <th>Appréciation</th>
+                                    <th>Note</th>
+                                </tr>
+                                </tfoot>
+                                <tbody>
+                                {{#each locations}}
+                                    <tr>
+                                        <td>{{this.id}}</td>
+                                        <td>{{this.sejour}}</td>
+                                        <td>{{this.immat}}</td>
+                                        <td>{{this.appreciation}}</td>
+                                        <td>{{this.note}}</td>
+                                    </tr>
+                                {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </div>
+</section>
+<!-- END DONNEES MILIEU -->
+
+<!-- Jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!-- Waves Effect Plugin Js -->
+<script src="../../javascripts/waves.js"></script>
+<script src="../../javascripts/admin.js"></script>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+<script>
+    $(function () {
+        $('.dataTable').DataTable({
+            responsive: true
+        });
+    });
+</script>
+<script>
+    function searchLocations() {
+        var inputValue = document.getElementById('input_client').value;
+        if(inputValue === "") {
+            alert("Vous n'avez pas entré de valeur !");
+        } else {
+            var ArrayData = inputValue.split('C');
+            var idClient = ArrayData[1];
+            //alert(idClient);
+            window.location.href = ("/historique/client/").concat(idClient.toString());
+        }
+    }
+</script>
+</body>
+</html>

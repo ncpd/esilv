@@ -1,0 +1,60 @@
+
+    {
+        "emp_no" : 110344,
+        "birth_date": "1961-09-07",
+        "first_name": "Rosine",
+        "last_name": "Cools",
+        "gender": "F",
+        "hire_date": "1985-11-22",
+        "titles": [
+            {
+                "title": "Senior Engineer",
+                "from_date": "1985-11-22",
+                "to_date": "1988-09-09",
+                "isManager": false
+            },
+            {
+                "title": "Manager",
+                "from_date": "1988-09-09",
+                "to_date": "1992-08-02",
+                "isManager": true
+            },
+            {
+                "title": "Technique Leader",
+                "from_date": "1992-08-02",
+                "to_date": "9999-01-01",
+                "isManager": false
+            }
+        ],
+        "salaries": [
+            {
+                "salary": 50365,
+                "from_date": "1985-11-22",
+                "to_date": "1986-11-22"
+            },
+            {
+                "salary": 50953,
+                "from_date": "1986-11-22",
+                "to_date": "1987-11-22"
+            },
+            {
+                "salary": 53052,
+                "from_date": "1987-11-22",
+                "to_date": "1988-11-22"
+            }
+        ],
+      	"actual_department": {
+      		"dept_no":"d006",
+      		"dept_name":"Quality Management",
+      		"from_date":"1987-12-24",
+      		"to_date":"9999-01-01"
+      	},
+        "dept_history": [
+            {
+                "dept_name": "Production",
+                "from_date": "1985-11-22",
+                "to_date": "1987-12-24",
+                "dept_no": "d004"
+            }
+        ]
+    }

@@ -1,0 +1,24 @@
+[Unit]
+Description=MongoDB service
+Wants=network.target
+After=network.target
+
+[Service]
+Type=forking
+PermissionsStartOnly=true
+ExecStartPre=/bin/mkdir -p /var/lib/mongod
+ExecStartPre=/bin/chown mongodb:mongodb /var/lib/mongod
+# Valeur du fichier de configuration à modifier selon le serveur
+ExecStart=/usr/bin/mongod -f /home/administrateur/cloud/config/mongo_RS1.conf
+# ExecStart=/usr/bin/mongod -f /home/administrateur/cloud/config/mongo_RS2.conf
+# ExecStart=/usr/bin/mongod -f /home/administrateur/cloud/config/mongo_RS3.conf
+# ExecStart=/usr/bin/mongod -f /home/administrateur/cloud/config/mongo_RS4.conf
+# ExecStart=/usr/bin/mongod -f /home/administrateur/cloud/config/mongo_RS5.conf
+# ExecStart=/usr/bin/mongod -f /home/administrateur/cloud/config/mongo_RS6.conf
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+User=administrateur
+Group=administrateur
+
+[Install]
+WantedBy=multi-user.target

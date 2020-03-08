@@ -1,0 +1,1 @@
+select annee, sum(prixJ) as benef_annuel from location l inner join sejour s on s.id = l.sejour inner join voiture v on l.immat = v.immat group by annee;

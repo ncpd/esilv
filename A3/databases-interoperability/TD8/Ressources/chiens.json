@@ -1,0 +1,36 @@
+﻿{ "chiens":
+[
+{
+"nom":"neptune",
+"race": "boxer",
+"sexe":"male",
+"annee":1990,
+"proprietaire":"Chapelot",
+"email":"chapelot@gmail.com"
+},
+{
+"nom":"figaro",
+"race":"husky",
+"sexe":"male",
+"annee":1995,
+"proprietaire":"Levasseur",
+"email":"levasseur@gmail.com"
+},
+{
+"nom":"loukhoum",
+"race": "leonberg",
+"sexe":"femelle",
+"annee":2002,
+"proprietaire":"Nattier",
+"email":"natier@gmail.com"
+},
+{
+"nom":"taiga",
+"race":"berger allemand",
+"sexe":"femelle",
+"annee":2004,
+"proprietaire":"Chapelot",
+"email":"chapelot@gmail.com"
+}
+]
+}

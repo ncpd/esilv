@@ -1,0 +1,73 @@
+\documentclass[a4paper, 12pt]{report}
+\setcounter{tocdepth}{3}
+%\usepackage{tocloft}
+%\cftsetindents{section}{0.5in}{0.5in}
+%\cftsetindents{subsection}{0.5in}{0.5in}
+%\cftsetindents{subsubsection}{0.5in}{0.5in}
+\pdfinfo{
+/Author (Nicolas PICARD)
+/Title (Rapport\_Stage\_2A\_PICARD\_Nicolas)
+}
+
+%============== PACKAGES =================
+
+%============== Langue et encodage =================
+
+\usepackage[utf8]{inputenc}
+\usepackage[french, english]{babel}
+\usepackage{setspace}
+\setstretch{1,2}
+\renewcommand{\baselinestretch}{1.2}
+
+%============== Positionner les images =================
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+
+%============== Informations PDF =================
+%\usepackage[pdftex,
+%			pdfauthor = {Nicolas PICARD},
+%			pdftitle={Rapport de Stage Nicolas PICARD},
+%			hidelinks]{hyperref}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+
+%============== Tableaux =================
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{colortbl}
+%============== Interligne =================
+
+%============== Polices et Marges =================
+\usepackage[T1]{fontenc}
+\usepackage[top = 2cm, bottom = 2cm, left = 2cm, right = 2cm]{geometry}
+
+%============== Code =================
+\usepackage{verbatim}
+\usepackage{amsmath}
+
+%============== Couleurs =================
+\usepackage{color}
+\usepackage{xcolor-patch}
+\usepackage{sectsty}
+\definecolor{carmillon}{rgb}{0.82, 0.12, 0.36}
+\renewcommand{\thesection}{\arabic{section}}
+%\chapterfont{\color{carmillon}}
+%\sectionfont{\color{carmillon}}
+
+%============== DOCUMENT =================
+
+\begin{document}
+	%====== page de garde ======
+	\input{title.tex}
+	\newpage
+	\thispagestyle{empty}
+	\newpage
+	\thispagestyle{empty}
+	\setcounter{page}{1}
+	\newpage
+	%============== inclusion des parties =============
+	\input{./descriptifmissions.tex}
+\end{document}

@@ -1,0 +1,271 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>{{title}}</title>
+    <!-- Favicon-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+    <!-- bootstrap -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+
+    <!-- materialize -->
+    <link href="stylesheets/materialize.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="stylesheets/waves.css" rel="stylesheet" />
+
+    <!-- all-themes -->
+    <link href="stylesheets/themes/all-themes.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+    <script href="javascripts/counter.js"></script>
+</head>
+
+<body>
+<div class="overlay"></div>
+<!-- Top Bar -->
+<nav class="navbar-fixed-top bg-deep-orange">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="index.html">{{title}}</a>
+        </div>
+    </div>
+</nav>
+<!-- #Top Bar -->
+
+<!-- LEFT SIDEBAR -->
+<section>
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="image">
+                <img src="images/user.png" width="48" height="48" alt="User" />
+            </div>
+            <div class="info-container">
+                <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nicolas PICARD</div>
+                <div class="email">nicolas.picard@devinci.fr</div>
+            </div>
+        </div>
+        <!-- #User Info -->
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">NAVIGATION</li>
+                <li class="active">
+                    <a href="/">
+                        <i class="material-icons">dashboard</i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">folder</i>
+                        <span>Tableaux</span>
+                    </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a href="/historique">
+                                <span>Général</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/historique/client">
+                                <span>Historique Client</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="historique/vehicule">
+                                <span>Historique Interventions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/rentabilite">
+                        <i class="material-icons">euro_symbol</i>
+                        <span>Rentabilité</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- #Menu -->
+        <!-- Footer -->
+        <div class="legal">
+            <div class="copyright">
+                &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+            </div>
+            <div class="version">
+                <b>Version: </b> 1.0.5
+            </div>
+        </div>
+        <!-- #Footer -->
+    </aside>
+    <!-- #END# Left Sidebar -->
+</section>
+<!-- END LEFT SIDEBAR -->
+
+<!-- DONNEES MILIEU -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Basic Examples -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                LISTE DES CLIENTS
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="matable">
+                                    <thead>
+                                    <tr>
+                                        <th>Code Client</th>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Email</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tr>
+                                        <th>Code Client</th>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Email</th>
+                                    </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    {{#each clients}}
+                                        <tr>
+                                            <td>{{this.codeC}}</td>
+                                            <td>{{this.nom}}</td>
+                                            <td>{{this.prenom}}</td>
+                                            <td>{{this.email}}</td>
+                                        </tr>
+                                    {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                LISTE DES VOITURES
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="matable">
+                                    <thead>
+                                    <tr>
+                                        <th>Immatriculation</th>
+                                        <th>Marque</th>
+                                        <th>Modèle</th>
+                                        <th>Catégorie</th>
+                                        <th>Disponibilité</th>
+                                        <th>Parking</th>
+                                        <th>Place</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tr>
+                                        <th>Immatriculation</th>
+                                        <th>Marque</th>
+                                        <th>Modèle</th>
+                                        <th>Catégorie</th>
+                                        <th>Disponibilité</th>
+                                        <th>Parking</th>
+                                        <th>Place</th>
+                                    </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    {{#each voitures}}
+                                        <tr>
+                                            <td>{{this.immat}}</td>
+                                            <td>{{this.marque}}</td>
+                                            <td>{{this.modele}}</td>
+                                            <td>{{this.categorie}}</td>
+                                            {{#if disponibilite}}
+                                                <td>Disponible</td>
+                                            {{else}}
+                                                <td>Indisponible</td>
+                                            {{/if}}
+                                            <td>Parking {{this.nom}}, {{this.adresse}}, {{this.ville}}</td>
+                                            <td>{{this.place_parking}}</td>
+                                        </tr>
+                                    {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- END DONNEES MILIEU -->
+
+<!-- Jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!-- Waves Effect Plugin Js -->
+<script src="javascripts/waves.js"></script>
+<script src="javascripts/admin.js"></script>
+
+ <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+<!-- Jquery DataTable Plugin Js
+<script src="javascripts/jquery-datatable/jquery.dataTables.js"></script>
+<script src="javascripts/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+<script src="javascripts/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+<script src="javascripts/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+<script src="javascripts/jquery-datatable/extensions/export/jszip.min.js"></script>
+<script src="javascripts/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+<script src="javascripts/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+<script src="javascripts/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+<script src="javascripts/jquery-datatable/extensions/export/buttons.print.min.js"></script> -->
+
+<script>
+    $(function () {
+        $('.dataTable').DataTable({
+            responsive: true
+        });
+    });
+</script>
+<!-- Jquery CountTo Plugin Js -->
+<script src="javascripts/jquery.countTo.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        // custom formatting example
+        $('#users').data('countToOptions', {
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
+        });
+
+        // start all the timers
+        $('.timer').each(count);
+
+        function count(options) {
+            var $this = $(this);
+            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            $this.countTo(options);
+        }
+    });
+</script>
+</body>
+</html>

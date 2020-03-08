@@ -1,0 +1,15 @@
+[Unit]
+Description=MongoDB Router service
+Wants=network.target
+After=network.target
+
+[Service]
+User=administrateur
+Group=administrateur
+Type=forking
+ExecStart=/usr/bin/mongos -f /home/administrateur/cloud/config/mongos.conf
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

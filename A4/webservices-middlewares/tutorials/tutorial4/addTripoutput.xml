@@ -1,0 +1,1 @@
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns0:addTripResponse xmlns:ns0="http://services/"><return><capacity>42</capacity><id>6</id><occupied>false</occupied><title>Vienne</title></return></ns0:addTripResponse></S:Body></S:Envelope>

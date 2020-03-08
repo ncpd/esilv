@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<agenda>
+	<contact>
+		<nom>Dupont</nom>
+		<prenom>Noé</prenom>
+		<domicile>
+			<adresse>42 rue de la Paix</adresse>
+			<ville>Paris</ville>
+			<code_postal>75001</code_postal>
+			<telephone type="fixe">0123456789</telephone>
+		</domicile>
+	</contact>
+	<contact>
+		<nom>Dupont</nom>
+		<prenom>Léa</prenom>
+		<domicile>
+			<adresse>42 rue de la Paix</adresse>
+			<ville>Paris</ville>
+			<code_postal>75001</code_postal>
+			<telephone type="fixe">0123456789</telephone>
+			<telephone type="mobile">0611223344</telephone>
+		</domicile>
+	</contact>
+	<contact>
+		<nom>Dupont</nom>
+		<prenom>Charles</prenom>
+		<domicile>
+			<adresse>42 rue de la Paix</adresse>
+			<ville>Paris</ville>
+			<code_postal>75001</code_postal>
+			<telephone type="fixe">0123456789</telephone>
+		</domicile>
+	</contact>
+	<contact>
+		<nom>Martin</nom>
+		<prenom>Paul</prenom>
+		<domicile>
+			<adresse>1 rue de la Gare</adresse>
+			<ville>Trifouilly-les-oies</ville>
+			<code_postal/>
+			<telephone type="fixe">0354769821</telephone>
+		</domicile>
+		<travail>
+			<adresse>7 rue du Parc</adresse>
+			<ville>Lyon</ville>
+			<code_postal/>
+			<telephone type="fax">0404040404</telephone>
+			<telephone type="mobile">0676543210</telephone>
+		</travail>
+	</contact>
+	<contact>
+		<nom epouse="Martin">Durant</nom>
+		<prenom>Jeanne</prenom>
+		<domicile>
+			<adresse>1 rue de la Gare</adresse>
+			<ville>Trifouilly-les-oies</ville>
+			<code_postal/>
+			<telephone type="fixe">0123456789</telephone>
+			<telephone type="mobile">0788991122</telephone>
+		</domicile>
+	</contact>
+	<contact>
+		<nom>Nicolas</nom>
+		<prenom>Marie</prenom>
+		<domicile>
+			<adresse>13 rue de la République</adresse>
+			<ville>Courbevoie</ville>
+			<code_postal>92400</code_postal>
+			<telephone type="fixe"> 0154076482</telephone>
+			<telephone type="mobile">0694887213</telephone>
+		</domicile>
+	</contact>
+</agenda>

@@ -1,0 +1,19 @@
+\select@language {english}
+\contentsline {chapter}{Introduction}{2}{chapter*.2}
+\contentsline {chapter}{Descriptif des missions}{2}{chapter*.2}
+\contentsline {section}{Monographie de l'entreprise}{3}{chapter*.3}
+\contentsline {subsubsection}{Le groupe SNCF}{3}{section*.4}
+\contentsline {subsubsection}{Les cinq m\IeC {\'e}tiers du groupe}{4}{section*.5}
+\contentsline {subsubsection}{Fret SNCF}{4}{section*.6}
+\contentsline {subsubsection}{Pr\IeC {\'e}sentation du service}{5}{section*.7}
+\contentsline {section}{Missions}{5}{section*.8}
+\contentsline {subsection}{Outils}{6}{section*.9}
+\contentsline {subsubsection}{La m\IeC {\'e}thode Agile}{6}{section*.10}
+\contentsline {subsubsection}{Jira}{7}{section*.11}
+\contentsline {subsubsection}{Git et Gitlab}{7}{section*.12}
+\contentsline {subsubsection}{Eclipse Neon}{9}{section*.13}
+\contentsline {subsubsection}{PgAdmin III}{9}{section*.14}
+\contentsline {subsection}{Missions r\IeC {\'e}alis\IeC {\'e}es}{9}{section*.15}
+\contentsline {subsubsection}{D\IeC {\'e}velopper l\IeC {\textquoteright }ergonomie Fiche Flux \& de nouvelles fonctionnalit\IeC {\'e}s}{11}{section*.16}
+\contentsline {subsubsection}{D\IeC {\'e}velopper des statistiques de suivi d\IeC {\textquoteright }utilisation du SI Ing\IeC {\'e}nierie}{12}{section*.17}
+\contentsline {chapter}{Conclusion}{14}{section*.18}

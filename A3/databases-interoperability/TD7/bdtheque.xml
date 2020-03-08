@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<bdtheque>
+	<BD isbn="978-2203001169">
+		<titre>On a marché sur la Lune</titre>
+		<auteur>Hergé</auteur>
+		<nombre_pages>62</nombre_pages>
+	</BD>
+	<BD isbn="978-2203001039">
+		<titre>Les Cigares du pharaon</titre>
+		<auteur>Hergé</auteur>
+	</BD>
+	<BD isbn="978-2012101371">
+		<titre>Le tour de Gaule d'Asterix</titre>
+		<auteur>Goscinny</auteur>
+		<nombre_pages>48</nombre_pages>
+	</BD>
+	<BD isbn="978-2354260330">
+		<titre>Faites gaffe à Lagaffe</titre>
+		<auteur>Franquin</auteur>
+		<nombre_pages>48</nombre_pages>
+	</BD>
+</bdtheque>

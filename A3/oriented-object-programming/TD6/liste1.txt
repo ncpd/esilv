@@ -1,0 +1,17 @@
+Fixe,Alcatel,0693495009,L456
+Fixe,Thomson,0617078993,L501
+Fixe,Siemens,0457194010,E321
+Fixe,Siemens,0320882161,E100
+Fixe,Siemens,0372368706,T654
+Fixe,Alcatel,0350613064,U986
+Fixe,Alcatel,0614501953,L100
+Fixe,Alcatel,0547743055,X567
+Portable,Nokia,0388916015,Jean
+Portable,Nokia,0496202257,Pierre
+Portable,Samsung,0732747396,Marie
+Portable,Samsung,0439425998,Alice
+Portable,Samsung,0462375217,Marc
+Portable,Samsung,0455512153,Olivier
+Portable,Apple,0261881510,Nicole
+Portable,Apple,0236897786,Olive
+Portable,Apple,0986735027,Anne

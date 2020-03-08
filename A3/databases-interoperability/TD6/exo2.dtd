@@ -1,0 +1,6 @@
+<!ELEMENT QCMRU (question)>
+<!ELEMENT question (enonce, choix, reponse)>
+<!ELEMENT enonce (#PCDATA)>
+<!ELEMENT choix (#PCDATA)>
+<!ELEMENT reponse (#PCDATA)>
+<!ATTLIST reponse solution CDATA #IMPLIED>

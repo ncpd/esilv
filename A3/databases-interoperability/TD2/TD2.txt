@@ -1,0 +1,26 @@
+========== EXERCICE 1 ==========
+
+1) Voir AnalyseSI
+
+========== EXERCICE 2 ==========
+
+1) Installation de MySQL
+
+========== EXERCICE 3 ==========
+
+1) Création db
+
+========== EXERCICE 4 ==========
+
+1) Client : 19 | Proprietaire : 13 | Voiture : 20 | Location : 9
+2)
+
+========== EXERCICE 5 ==========
+
+1) 20 Voitures
+4) 23 Voitures
+5) 3 Voitures
+6) 21 Voitures
+7) Le rose et vert ne sont pas dans l'enum
+
+

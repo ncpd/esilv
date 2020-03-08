@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<reservation>
+	<noSejour>L001</noSejour>
+	<sejour statut="confirmé"/>
+	<appartement>123456</appartement>
+</reservation>

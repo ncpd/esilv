@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filmotheque>
+	<serie>
+		<nom>The walking dead</nom>
+		<annee>2010</annee>
+		<acteur>Lincoln</acteur>
+	</serie>
+	<film>
+		<nom>A la vie</nom>
+		<annee mois="11">2014</annee>
+		<acteur>Depardieu</acteur>
+		<acteur>Clément</acteur>
+		<acteur>Steege</acteur>
+	</film>
+	<film>
+		<nom>Léon</nom><!--Léon est un prénom masculin issu du latin Leo qui signifie lion.-->
+		<annee mois="9">1994</annee>
+		<acteur>Réno</acteur>
+		<acteur>Portman</acteur>
+		<acteur>Oldman</acteur>
+	</film>
+	<film>
+		<nom>La vie domestique</nom>
+		<annee>2013</annee>
+		<acteur>Devos</acteur>
+		<acteur>Ferrier</acteur>
+		<acteur>Regnier</acteur>
+		<acteur>Noguerra</acteur>
+	</film>
+	<film>
+		<nom>Le grand bleu</nom>
+		<annee mois="5">1988</annee>
+		<acteur>Arquette</acteur>
+		<acteur>Barr</acteur>
+		<acteur>Réno</acteur>
+		<acteur>Bouise</acteur>
+	</film>
+	<documentaire>
+		<nom>Le monde du silence</nom>
+		<annee>1956</annee>
+		<realisateur> Cousteau</realisateur>
+	</documentaire>
+	<film>
+		<nom>La vie est belle</nom>
+		<annee>1997</annee>
+		<acteur>Begnini</acteur><!--il a aussi joué Caesar-->
+		<acteur>Braschi</acteur>
+		<acteur>Cantarini</acteur>
+		<acteur>Durano</acteur><!--Ce film est plus joli en italien-->
+	</film>
+	<documentaire>
+		<nom>Etre et avoir</nom>
+		<annee mois="8">2002</annee>
+		<realisateur>Philibert</realisateur>
+	</documentaire>
+	<serie>
+		<nom>Game of thrones</nom>
+		<annee>2011</annee>
+		<acteur>Dinklage</acteur>
+	</serie>
+	<documentaire>
+		<nom>Les seigneurs de la forêt</nom>
+		<annee>1958</annee>
+		<realisateur>Brandt</realisateur>
+	</documentaire>
+	<serie>
+		<nom>Gotham</nom>
+		<annee>2014</annee><!--C'est récent!-->
+		<acteur>Mazouz</acteur>
+	</serie>
+</filmotheque>
+
+<!-- XPATH -->
+
+<!-- 
+1) /filmotheque/*/nom
+2) /filmotheque/*/nom/text()
+3) /filmotheque/documentaire
+4) /filmotheque/serie/*
+5) /filmotheque/film[acteur="Réno"]
+6) /filmotheque/film[nom = "Léon"]/acteur
+7) /filmotheque/film[acteur="Réno"]
+8) /filmotheque/film[acteur="Réno" and acteur="Portman"]
+9) /filmotheque/film[contains(nom, "vie")]
+10) /filmotheque/film[annee[@mois="8"]]
+11) /filmotheque/film[annee[@mois >= 10 and @mois <= 12 ]]
+12) /filmotheque/*[annee = 2014]
+13) /filmotheque/film[nom="La vie est belle"]/comment()
+-->
+

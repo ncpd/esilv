@@ -1,0 +1,20 @@
+################## REQUETES SIMPLES (USER) ################## 
+
+1) Obtenir sa fiche de paie de l'année actuelle (Aggregate)
+2) Obtenir les employés travaillant dans son département
+3) Obtenir le ou les managers d'un département (Aggregate)
+4) Obtenir le nom et le titre des derniers employés arrivés dans son département (par volume, par date) (Aggregate)
+ 
+################## REQUETES COMPLEXES (ANALYST) ################## 
+
+1) Obtenir la paie moyenne( ou genre la plus petite et la plus grande) par departement (MapReduce)
+2) Obtenir tous les numéros d'employés qui ont le même titre (MapReduce)
+3) Obtenir l'age moyen des employés pour chaque département (MapReduce)
+4) Obtenir la répartition du genre des employés par département (+ pour les managers seulement) (MapReduce)
+
+################## REQUETES STATS (ADMIN) ################## 
+
+1) Obtenir le nombre de documents par shard (Stats)
+2) Obtenir le nombre de shards (Stats)
+3) Obtenir le nombre de chunks par shard (Stats)
+4) Obtenir le poids moyen d'un document (Stats)

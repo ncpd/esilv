@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services/">
+   <soapenv:Header/>
+   <soapenv:Body><ser:bookTrip>
+         <arg0>Hong Kong</arg0>
+         <arg1>Danny Flamby</arg1>
+      </ser:bookTrip>
+   </soapenv:Body>
+</soapenv:Envelope>
+

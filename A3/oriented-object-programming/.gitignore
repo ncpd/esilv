@@ -1,0 +1,7 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/PFR/Zombillenium/.vs/Zombillenium/v15/Server/sqlite3/storage.ide-wal
+/PFR/Zombillenium/.vs/Zombillenium/v15/Server/sqlite3/storage.ide-shm
+/PFR/Zombillenium/.vs/

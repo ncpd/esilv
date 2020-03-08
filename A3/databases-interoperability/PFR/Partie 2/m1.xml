@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE reservation SYSTEM "m1.dtd">
+
+<reservation>
+	<client>Picard</client>
+	<adresse>
+		<ville>La Défense</ville>
+	</adresse>
+	<date>14</date>
+	<sejour>16</sejour>
+</reservation>

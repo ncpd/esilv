@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!-- DTD à definir -->
+
+<QCMRM>
+	<question>
+		<enonce>Quelle(s) operation(s) donne(nt) pour resultat 6 ?</enonce>
+		<!-- A compléter : choix + réponse(s) -->
+	</question>
+	
+	<!-- suite du questionnaire... -->
+</QCMRM> 

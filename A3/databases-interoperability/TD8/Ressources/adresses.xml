@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+
+<!-- New document created with EditiX at Tue Feb 21 12:40:12 CET 2017 -->
+
+
+<agenda>
+	<contact>
+		<nom> Dupont </nom>
+		<prenom> Noé </prenom>
+		<tel-fixe> 01 23 45 67 89 </tel-fixe>
+		<adresse>
+			<voie> 42 rue de la paix </voie>
+			<code-postal> 75001 </code-postal>
+			<ville>Paris </ville>
+		</adresse>
+	</contact>
+
+	<contact>
+		<nom> Dupont </nom>
+		<prenom> Léa </prenom>
+		<tel-fixe> 01 23 45 67 89 </tel-fixe>
+		<tel-mobile> 06 11 22 33 44 </tel-mobile>
+		<adresse>
+			<voie> 42 rue de la paix </voie>
+			<code-postal> 75001 </code-postal>
+			<ville>Paris </ville>
+		</adresse>
+	</contact>
+	
+	<contact>
+		<nom> Dupont </nom>
+		<prenom> Charles </prenom>
+		<tel-fixe> 01 23 45 67 89 </tel-fixe>
+		<adresse>
+			<voie> 42 rue de la paix </voie>
+			<code-postal> 75001 </code-postal>
+			<ville>Paris </ville>
+		</adresse>
+	</contact>
+	
+	<contact>
+		<nom> Martin </nom>
+		<prenom> Paul </prenom>
+		<tel-fixe> 03 54 76 98 21 </tel-fixe>
+		<tel-mobile> 06 76 54 32 10 </tel-mobile>
+		<fax> 04 04 04 04 04</fax>
+		<adresse>
+			<voie>1 rue de la gare</voie>
+			<ville>Trifouilly les oies</ville>
+		</adresse>
+		<adresse>
+			<voie>7 rue du parc</voie>
+			<ville>Lyon</ville>
+		</adresse>
+	</contact>
+	<contact>
+		<nom>MARTIN</nom>
+		<nom-jeune-fille>DURANT</nom-jeune-fille>
+		<prenom>Jeanne</prenom>
+		<tel-fixe>03 54 76 98 21</tel-fixe>
+		<tel-mobile>07 88 99 11 22</tel-mobile>
+		<adresse>
+			<voie>1 rue de la gare</voie>
+			<ville>Trifouilly les Oies</ville>
+		 </adresse>
+	</contact>
+	<contact>
+		<nom>NICOLAS</nom>
+		<prenom>Marie</prenom>
+		<tel-fixe>01 54 07 64 82</tel-fixe>
+		<tel-mobile>06 94 88 72 13</tel-mobile>
+		<adresse>
+			<voie>13 rue de la République</voie>
+			<code-postal>92400</code-postal>
+			<ville>Courbevoie</ville>
+		 </adresse>
+	</contact>
+
+</agenda>

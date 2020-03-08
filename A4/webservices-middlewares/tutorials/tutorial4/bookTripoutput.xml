@@ -1,0 +1,1 @@
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns0:bookTripResponse xmlns:ns0="http://services/"><return><person>Danny Flamby</person><trip><capacity>30</capacity><id>2</id><occupied>false</occupied><title>Hong Kong</title></trip></return></ns0:bookTripResponse></S:Body></S:Envelope>

@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1515857052 source:d:\programmation\projets\c\structures & algo\td8-9-codeblocks\main.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	"donnees.h"
+	"arbre.h"
+
+1515437474 d:\programmation\projets\c\structures & algo\td8-9-codeblocks\donnees.h
+
+1515864014 d:\programmation\projets\c\structures & algo\td8-9-codeblocks\arbre.h
+
+1515437474 source:d:\programmation\projets\c\structures & algo\td8-9-codeblocks\donnees.c
+	"donnees.h"
+	<stdlib.h>
+	<stdio.h>
+
+1515863989 source:d:\programmation\projets\c\structures & algo\td8-9-codeblocks\arbre.c
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"donnees.h"
+	"arbre.h"
+
+1516030118 source:c:\users\nicolas\documents\codelite\algo\td8-9-codeblocks\arbre.c
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"donnees.h"
+	"arbre.h"
+
+1515539829 c:\users\nicolas\documents\codelite\algo\td8-9-codeblocks\donnees.h
+
+1516030118 c:\users\nicolas\documents\codelite\algo\td8-9-codeblocks\arbre.h
+
+1515539829 source:c:\users\nicolas\documents\codelite\algo\td8-9-codeblocks\donnees.c
+	"donnees.h"
+	<stdlib.h>
+	<stdio.h>
+
+1516030118 source:c:\users\nicolas\documents\codelite\algo\td8-9-codeblocks\main.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	"donnees.h"
+	"arbre.h"
+
+1519379160 source:d:\programmation\projets\c\structures & algo\decision tree\arbre.c
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"donnees.h"
+	"arbre.h"
+
+1519379160 d:\programmation\projets\c\structures & algo\decision tree\donnees.h
+
+1519379160 d:\programmation\projets\c\structures & algo\decision tree\arbre.h
+
+1519379160 source:d:\programmation\projets\c\structures & algo\decision tree\donnees.c
+	"donnees.h"
+	<stdlib.h>
+	<stdio.h>
+
+1519379160 source:d:\programmation\projets\c\structures & algo\decision tree\main.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	"donnees.h"
+	"arbre.h"
+

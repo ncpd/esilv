@@ -1,0 +1,79 @@
+
+
+Votre logiciel doit permettre a minima :
+
+? De lire un fichier csv (listing.csv sur moodle) contenant des membres du personnel et des
+attractions, et de les ajouter dans le logiciel
+	-done
+	-TODO: gérer le cas Attraction / String
+
+
+? D’ajouter de nouvelles attractions, de nouveau membre du personnel
+	-not done
+	-a bosser dans la classe admistitration (add ou suppr dans les liste)
+	
+
+? De pouvoir « faire évoluer » les membre du personnel et les attractions (changement de
+fonction, d’affectation, maintenance …). Pour chaque évolution que vous jugez importante à
+prendre en compte, vous devrez créer une méthode.
+	- done 
+	-a bosser dans : Personnel, Monstres, Sorcier, demon,LoupGarou,Vampire,Zombie
+	-fonctions : 	Personnel.changerFonction   	done
+			Monstre.changerCagnotte     	done
+			Monstre.changerAffectation	done
+			Sorcier.changerGrade		done
+			Sorcier.changerPouvoir		done
+			Demon.changerForce		done
+			LoupGarou.changerCruaute	done
+			Vampire.changerLuminausite	done	
+			Zombie.changerDecomposition	done
+			
+			
+		
+? De pouvoir sortir plusieurs éléments (attractions ou personnels) suivant des critères donnés
+(l’ensemble des vampires, toutes les attractions en maintenance, …) en sortie console, mais
+aussi dans un fichier csv.
+	-not done
+	-a bosser dans : Administration	
+	-fonctions :  	list<object> Select(critère)
+			Fonction filtrage
+			void WriteCSV				done 
+		-----Idée de critère-----			
+			-Personnel :
+				-selon le type ( une seule fonction pour tous les types)
+				-selon l'affectation
+				-selon la gagnotte
+					-superieur à 
+					-inférieur à 
+					-égale à
+				...
+
+
+
+
+? De pouvoir trier des éléments en fonctions d’un paramètre donné (les zombies en fonction de
+leur cagnotte, les démons en fonctions de leur force, …)
+
+
+
+? De pouvoir agir sur la cagnotte des monstres : l’augmenter ou la décrémenter. C’est Rose Von
+Bloodt qui s’occupe depuis le début de la gestion de la cagnotte, de manière parfois assez
+obscure, il faut bien le dire. Votre logiciel lui donnera juste un outil pour ajouter ou enlever les
+points qu’elle jugera nécessaires.
+- done
+
+
+
+? De pouvoir gérer les modifications engendrées par la cagnotte, à savoir :
+	
+
+
+? Si la cagnotte d’un monstre tombe en dessous de 50, il est d’office affecté à un stand
+barbe à papa.
+
+
+
+? Si la cagnotte des zombies ou des démons dépasse 500, ils obtiennent de façon
+provisoire (cela dépend de leur cagnotte) le pouvoir de disparaitre. A ce titre, ils ne
+sont plus affectés à une attraction spécifique (à moins qu’il manque de personnel bien
+sûr), mais doivent se balader dans le parc et faire peur aux visiteurs.

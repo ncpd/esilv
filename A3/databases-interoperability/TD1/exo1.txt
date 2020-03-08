@@ -1,0 +1,50 @@
+CLIENTS
+
+no client
+nom
+prenom
+téléphone
+email
+adresse
+ville
+departement
+code postal
+
+CONTACT
+
+no contact
+nom
+prenom
+email
+no telephone
+ville
+adresse
+departement
+code postal
+marques intéréssées
+
+PIECES DETACHEES
+
+numeroSerie
+partNumber
+véhicule visé
+prix
+
+VEHICULE
+
+no client
+immatriculation
+marque
+anneeDebut
+anneeFin
+modele
+type
+
+CLIENT PRO
+
+no client pro
+nom société
+nom
+téléphone
+no SIRET
+

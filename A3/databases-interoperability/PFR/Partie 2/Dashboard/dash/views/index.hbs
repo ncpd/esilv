@@ -1,0 +1,310 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>{{title}}</title>
+    <!-- Favicon-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- bootstrap -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+
+    <!-- materialize -->
+    <link href="stylesheets/materialize.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="stylesheets/waves.css" rel="stylesheet" />
+
+    <!-- all-themes -->
+    <link href="stylesheets/themes/all-themes.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+    <script href="javascripts/counter.js"></script>
+</head>
+
+<body>
+<div class="overlay"></div>
+<!-- Top Bar -->
+<nav class="navbar-fixed-top bg-deep-orange">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="index.html">{{title}}</a>
+        </div>
+    </div>
+</nav>
+<!-- #Top Bar -->
+
+<!-- LEFT SIDEBAR -->
+<section>
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="image">
+                <img src="images/user.png" width="48" height="48" alt="User" />
+            </div>
+            <div class="info-container">
+                <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nicolas PICARD</div>
+                <div class="email">nicolas.picard@devinci.fr</div>
+            </div>
+        </div>
+        <!-- #User Info -->
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">NAVIGATION</li>
+                <li class="active">
+                    <a href="/">
+                        <i class="material-icons">dashboard</i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">folder</i>
+                        <span>Tableaux</span>
+                    </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a href="/historique">
+                                <span>Général</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/historique/client">
+                                <span>Historique Client</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/historique/vehicule">
+                                <span>Historique Interventions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/rentabilite">
+                        <i class="material-icons">euro_symbol</i>
+                        <span>Rentabilité</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- #Menu -->
+        <!-- Footer -->
+        <div class="legal">
+            <div class="copyright">
+                &copy; 2018 <a href="javascript:void(0);">Nicolas PICARD - Martin PINTIAU</a>.
+            </div>
+            <div class="version">
+                <b>Version: </b> 1.0.0
+            </div>
+        </div>
+        <!-- #Footer -->
+    </aside>
+    <!-- #END# Left Sidebar -->
+</section>
+<!-- END LEFT SIDEBAR -->
+
+<!-- DONNEES MILIEU -->
+<section class="content">
+<div class="container-fluid">
+<div class="row clearfix">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box hover-expand-effect">
+            <div class="icon bg-pink">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="content">
+                <div class="text">CLIENTS</div>
+                <p><b class="timer font-30" id="users" data-to="{{nb_clients}}" data-speed="500"></b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box hover-expand-effect">
+            <div class="icon bg-blue">
+                <i class="material-icons">directions_car</i>
+            </div>
+            <div class="content">
+                <div class="text">VOITURES</div>
+                <p><b class="timer font-30" id="users" data-to="{{nb_voitures}}" data-speed="500"></b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box hover-expand-effect">
+            <div class="icon bg-green">
+                <i class="material-icons">equalizer</i>
+            </div>
+            <div class="content">
+                <div class="text">LOCATIONS TOTALES</div>
+                <p><b class="timer font-30" id="users" data-to="{{nb_locations}}" data-speed="500"></b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box hover-expand-effect">
+            <div class="icon bg-indigo">
+                <i class="material-icons">star</i>
+            </div>
+            <div class="content">
+                <div class="text">AVIS MOYEN</div>
+                <p><b class="timer font-30" id="rating" data-to="{{avg_rate}}" data-speed="700" data-decimals="2"></b></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="row clearfix">
+    <!-- Answered Tickets -->
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="card">
+                <div class="header bg-light-blue">
+                    <h2>
+                        Derniers commentaires <small>Commentaires et notes des 3 dernières locations</small>
+                    </h2>
+                </div>
+                <div class="body">
+                    {{#each coms}}
+                        <p><b class="font-30">{{this.note}}/5</b><i class="material-icons">star</i></br>"{{this.appreciation}}"</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    <!-- #END# Answered Tickets -->
+        <!-- Pie Chart -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card">
+                <div class="header">
+                    <h2>CATEGORIES DE VOITURES LOUEES</h2>
+                </div>
+                <div class="body">
+                    <canvas id="pie_chart" height="125"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Pie Chart -->
+        <!-- Pie Chart -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card">
+                <div class="header">
+                    <h2>LOCATIONS ANNUELLES</h2>
+                </div>
+                <div class="body">
+                    <canvas id="line_chart" height="125"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Pie Chart -->
+</div>
+</div>
+</section>
+<!-- END DONNEES MILIEU -->
+
+<!-- Jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!-- Waves Effect Plugin Js -->
+<script src="javascripts/waves.js"></script>
+<!-- Chart Plugins Js -->
+<script src="javascripts/Chart.bundle.js"></script>
+<!-- Custom Js -->
+<script>
+    $(function () {
+        new Chart(document.getElementById("line_chart").getContext("2d"), getChartJs('line'));
+        new Chart(document.getElementById("pie_chart").getContext("2d"), getChartJs('pie'));
+    });
+
+    function getChartJs(type) {
+        var config = null;
+        if (type === 'pie') {
+            config = {
+                type: 'pie',
+                data: {
+                    labels: ["Nb de cabriolets", "Nb de berlines"],
+                    datasets: [{
+                        data: [{{nb_cabriolets}}, {{nb_berlines}}],
+                        backgroundColor: [
+                            "rgb(233, 30, 99)",
+                            "rgb(255, 193, 7)"
+                        ],
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: false
+                }
+            }
+        } else if(type === 'line') {
+            config = {
+                type: 'line',
+                data: {
+                    labels: ["2016", "2017", "2018"],
+                    datasets: [{
+                        label: "Locations annuelles",
+                        data: [{{locs_yearly.0.nb_locs}}, {{locs_yearly.1.nb_locs}}, {{locs_yearly.2.nb_locs}}],
+                        borderColor: 'rgba(0, 188, 212, 0.75)',
+                        backgroundColor: 'rgba(0, 188, 212, 0.3)',
+                        pointBorderColor: 'rgba(0, 188, 212, 0)',
+                        pointBackgroundColor: 'rgba(0, 188, 212, 0.9)',
+                        pointBorderWidth: 1
+                    }, {
+                        label: "My Second dataset",
+                        data: [0, 0, 0, 0, 0, 0, 0],
+                        borderColor: 'rgba(233, 30, 99, 0.75)',
+                        backgroundColor: 'rgba(233, 30, 99, 0.3)',
+                        pointBorderColor: 'rgba(233, 30, 99, 0)',
+                        pointBackgroundColor: 'rgba(233, 30, 99, 0.9)',
+                        pointBorderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: false,
+                    beginAtZero:true
+                }
+            }
+        }
+        return config;
+    }
+</script>
+<script src="javascripts/admin.js"></script>
+
+<!-- Jquery CountTo Plugin Js -->
+<script src="javascripts/jquery.countTo.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        // custom formatting example
+        $('#users').data('countToOptions', {
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
+        });
+
+        $('#rating').data('countToOptions', {
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
+        });
+
+        // start all the timers
+        $('.timer').each(count);
+
+        function count(options) {
+            var $this = $(this);
+            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            $this.countTo(options);
+        }
+    });
+</script>
+</body>
+</html>

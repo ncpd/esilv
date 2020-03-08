@@ -1,0 +1,48 @@
+\chapter*{\textcolor{carmillon}{Explication du type table}}
+Tout d'abord, nous avons réfléchi à la logique derrière la table de fonctionnaires demandée. Nous avons réalisé un schéma afin de bien distinguer chaque type, puisque nous avons créé une structure pour chaque besoin : une structure table, une structure vecteur, et une structure fonctionnaire.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.15]{img/schema.png}
+		\caption{Organisation des structures}
+	\end{center}
+\end{figure}
+Nous avons donc commencé par affecter une \textbf{\emph{taille}} à cette structure \textbf{\emph{table}}. C'est le nombre de vecteurs dont elle disposera. Nous lui avons par la suite ajouté un contenu de type \textbf{\emph{vecteur}} (vecteur * \_table).\\
+Chaque vecteur dispose d'une \textbf{\emph{taille}} (ie. un nombre de fonctionnaires), et d'un contenu de \textbf{\emph{fonctionnaires}} (fonctionnaire * vec\_fonctionnaires). En effet, ce vecteur sera constamment sollicité puisqu'un nombre variable de fonctionnaires se situera à l'intérieur.\\Chaque fonctionnaire dispose lui, d'un \textbf{\emph{nom}} (char * nom), d'un \textbf{\emph{prénom}} (char * prenom), et d'un \textbf{\emph{salaire}} (int salaire).
+
+\chapter*{\textcolor{carmillon}{Descriptif des fonctions}}
+\textbf{1. Index :} La fonction index est codée de telle façon qu'elle reçoit des entrées utilisateurs (\textit{scanf}) pour le nom et prénom du fonctionnaire. Les fonctions \textit{formatNom} et \textit{formatPrenom} s'assurent de formater correctement les entrées utilisateurs afin de rendre celles-ci plus simples (peu importe les majuscules ou non entrées). Une fonction index réalise ensuite le calcul de l'index (sur la concaténation des 4 premières lettres du nom et des deux premières lettres du prénom) à l'aide de la formule suivante :
+\begin{center}
+	\begin{math}
+	\boxed{
+		index = \left(
+		\sum\limits_{i=0}^{5}ascii(c_{i}).B^{i}\right) \pmod N
+	}
+	\end{math}
+\end{center}
+
+\noindent
+\textbf{2. Ajouter :} Tout comme la fonction \textit{index}, \textit{ajouter} prend des entrées utilisateurs, formate le nom et prénom du fonctionnaire à ajouter et mémorise le salaire entré. La méthode \textit{addToTable} s'occupe de trouver le vecteur où placer le fonctionnaire, grâce au calcul de son index, puis d'ajouter (ou non) le fonctionnaire avec \textit{ajouterFonctionnaire}, qui va réaliser une vérification de l'existence de ce fonctionnaire. Un nouvel espace mémoire de taille \textit{n+1} est alors alloué pour y placer ce nouveau fonctionnaire s'il n'existe pas. Enfin, on augmente la taille du vecteur et on affecte ce nouvel espace mémoire au contenu du vecteur, puis on le trie à l'aide de \textit{triAlpha}.\\
+
+\noindent
+\textbf{3. Charger :} Cette fonction attend une entrée utilisateur qui correspond au nombre de fonctionnaires à charger. Si le nombre entré est bien inférieur au nombre maximum de fonctionnaires du fichier Chicago.txt (et que le fichier existe évidemment), alors l'ajout des \textit{n} premiers fonctionnaires du fichier se fait, en récupérant pour chaque ligne le nom, prénom et salaire du fonctionnaire puis en appelant la fonction \textit{addToTable} réalisée auparavant.\\
+
+\noindent
+\textbf{4. Afficher Salaire :} On récupère tout d'abord le nom et le prénom du fonctionnaire recherché et on les formate. On calcule ensuite son index pour trouver le vecteur correspondant. On crée un fonctionnaire (temporaire) qui servira à la comparaison lors de la vérification de son existence au sein du vecteur, et enfin si celui-ci existe on parcourt le vecteur jusqu'à trouver le fonctionnaire correspondant, puis on affiche le salaire correspondant.\\
+
+\noindent
+\textbf{5. Afficher entre :} L'utilisateur entre d'abord deux index, l'un de début et l'autre de fin. Si ces index sont bien dans la table, alors pour chaque vecteur entre ces index on affiche son contenu, c'est à dire \textit{NOM Prénom Salaire} de chaque fonctionnaire, ou \textit{Pas de fonctionnaire} sinon.\\
+
+\noindent
+\textbf{6. Nombre de conflits :} Cette fonction parcourt toute la table et regarde pour chaque vecteur si sa taille est supérieure à 1, c'est à dire si son contenu comporte deux fonctionnaires ou plus. Si c'est le cas, alors le compteur de conflits augmente de 1.\\
+
+\noindent
+\textbf{7. Taille moyenne des conflits:} Lorsqu'il y a conflit, (\textit{cf} fonction Nombre de conflits), alors on compte le nombre de fonctionnaires du vecteur correspondant et on l'ajoute à la somme. Lorsque la table a été entièrement parcourue, et si \textit{nbConflits} $\neq$ 0 (pas de division par 0) alors on affiche la somme du nombre de fonctionnaires divisée par le nombre de conflits.\\
+
+\noindent
+\textbf{8. Supprimer :} \textit{supprimer} prend des entrées utilisateurs, formate le nom et prénom du fonctionnaire à supprimer. La méthode \textit{deleteFromTable} s'occupe de trouver le vecteur où placer le fonctionnaire, grâce au calcul de son index, puis d'appeler \textit{supprimerFonctionnaire}, qui réalise une vérification de l'existence de ce fonctionnaire. Si il existe, on supprime le fonctionnaire avec \textit{free}, et on decale les autres fonctionnaires qui le suivaient. Enfin, on diminue la taille du vecteur et on le trie à l'aide de \textit{triAlpha}.\\\textbf{\textit{\underline{Cas particulier :}}} vecteur de taille 1 : on \textit{free} directement le contenu du vecteur et on affecte sa taille à 0.\\
+
+\noindent
+\textbf{9. Supprimer entre :} L'utilisateur entre d'abord deux index, l'un de début et l'autre de fin. Si ces index sont bien dans la table, alors pour chaque vecteur dont le contenu n'est  pas vide entre ces index on \textit{free} son contenu et on lui affecte une taille de 0.\\
+
+\noindent
+\textbf{10. Quitter :} Quitte le programme avec \textit{EXIT\_SUCCESS} $\Leftrightarrow$ \textit{return 0}, qui indique que le programme a pris fin et que tout s'est bien passé.\\

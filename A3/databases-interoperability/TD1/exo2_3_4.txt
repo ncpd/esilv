@@ -1,0 +1,28 @@
+========== EXERCICE 2 ==========
+
+1) Oui
+2) Non
+3) Oui
+4) Oui
+
+========== EXERCICE 3 ==========
+
+1) Non - (2,2) car un double a 4 joueurs
+2) Aucune contrainte
+3) Aucune contrainte
+
+========== EXERCICE 4 ==========
+
+1) Non
+2) Oui
+3) Aucune contrainte
+
+========== EXERCICE 5 ==========
+
+Logiciel installé
+
+========== EXERCICE 6 ==========
+
+Voir PNG
+
+========== EXERCICE 7 ==========

@@ -1,0 +1,79 @@
+﻿{
+  "agenda": [
+    {
+      "nom": "Dupont",
+      "prenom": "Noé",
+      "tel fixe": "01 23 45 67 89",
+      "adresse": {
+        "voie": "42 rue de la paix",
+        "code postal": "75001",
+        "ville": "paris"
+      }
+    },
+    {
+      "nom": "Dupont",
+      "prenom": "Lea",
+      "tel fixe": "0123456789",
+      "tel mobile": "06 11 22 33 44",
+      "adresse": {
+        "voie": "42 rue de la paix",
+        "code postal": "75001",
+        "ville": "paris"
+      }
+    },
+    {
+      "nom": "Dupont",
+      "prenom": "Charles",
+      "tel fixe": "0123456789",
+      "adresse": {
+        "voie": "42 rue de la paix",
+        "code postal": "75001",
+        "ville": "paris"
+      }
+    },
+    {
+      "nom": "Martin",
+      "prenom": "Paul",
+      "tel mobile": "0676543210",
+      "adresse": [
+        {
+          "privé": {
+            "tel fixe": "0354769821",
+            "voie": "1 rue de la gare",
+            "ville": "Trifouilly les oies"
+          }
+        },
+        {
+          "travail": {
+            "tel fixe": "0354769821",
+            "fax": "0404040404",
+            "voie": "7 rue du parc",
+            "ville": "Lyon"
+          }
+        }
+      ]
+    },
+    {
+      "nom": "Durant",
+      "prenom": "Jeanne",
+      "epouse": "Martin",
+      "tel fixe": "0354769821",
+      "tel mobile": "0788991122",
+      "adresse": {
+        "voie": "1 rue de la gare",
+        "ville": "Trifouilly les oies"
+      }
+    },
+    {
+      "nom": "Nicolas",
+      "prenom": "Marie",
+      "tel fixe": "0154076482",
+      "tel mobile": "0694887213",
+      "adresse": {
+        "voie": "13 rue de la république",
+        "code postal": "92400",
+        "ville": "Courbevoie"
+      }
+    }
+  ]
+}
